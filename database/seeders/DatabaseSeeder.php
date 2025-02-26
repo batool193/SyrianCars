@@ -15,12 +15,11 @@ class DatabaseSeeder extends Seeder
             BrandsSeeder::class,
             ModelsSeeder::class,
             CitiesSeeder::class,
-            ProductionYearsSeeder::class,
             FuelsSeeder::class,
             CarsSeeder::class,
             RatingsSeeder::class,
-            SocialAccountsSeeder::class,
-            PhotosSeeder::class,
+            
+            
         ]);
     }
 }
