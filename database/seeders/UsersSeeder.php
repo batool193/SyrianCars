@@ -1,3 +1,4 @@
+<?php
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
@@ -11,7 +12,6 @@ class UsersSeeder extends Seeder
         DB::table('users')->insert([
             [
                 'id' => 1,
-                'role_id' => 1,
                 'first_name' => 'Admin',
                 'last_name' => 'User',
                 'email' => 'admin@example.com',
