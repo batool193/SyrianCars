@@ -72,3 +72,9 @@ Route::apiResource('Gears', App\Http\Controllers\GearController::class);
  * These routes handle Rating management operations.
  */
 Route::apiResource('Ratings', App\Http\Controllers\RatingController::class);
+/**
+ * Photo Management Routes
+ *
+ * These routes handle Photo management operations.
+ */
+Route::apiResource('Photos', App\Http\Controllers\PhotoController::class);
