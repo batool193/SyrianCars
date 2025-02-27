@@ -36,3 +36,9 @@ Route::apiResource('Cars', App\Http\Controllers\CarController::class);
  * These routes handle City management operations.
  */
 Route::apiResource('Cities', App\Http\Controllers\CityController::class);
+/**
+ * Brand Management Routes
+ *
+ * These routes handle Brand management operations.
+ */
+Route::apiResource('Brands', App\Http\Controllers\BrandController::class);
