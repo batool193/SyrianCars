@@ -78,3 +78,9 @@ Route::apiResource('Ratings', App\Http\Controllers\RatingController::class);
  * These routes handle Photo management operations.
  */
 Route::apiResource('Photos', App\Http\Controllers\PhotoController::class);
+/**
+ * SocialAccount Management Routes
+ *
+ * These routes handle SocialAccount management operations.
+ */
+Route::apiResource('SocialAccounts', App\Http\Controllers\SocialAccountController::class);
