@@ -42,3 +42,9 @@ Route::apiResource('Cities', App\Http\Controllers\CityController::class);
  * These routes handle Brand management operations.
  */
 Route::apiResource('Brands', App\Http\Controllers\BrandController::class);
+/**
+ * Color Management Routes
+ *
+ * These routes handle Color management operations.
+ */
+Route::apiResource('Colors', App\Http\Controllers\ColorController::class);
