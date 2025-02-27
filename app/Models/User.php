@@ -6,22 +6,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
-    use HasFactory, HasApiTokens;
+    use HasFactory, HasApiTokens,HasRoles;
 
     protected $fillable = [
-        'role_id', 'first_name', 'last_name', 'email', 
+         'first_name', 'last_name', 'email',
         'password', 'phone', 'city_id', 'birthdate'
     ];
 
     protected $hidden = ['password'];
-
-    public function role()
-    {
-        return $this->belongsTo(Role::class);
-    }
 
     public function city()
     {

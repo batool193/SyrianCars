@@ -1,18 +1,17 @@
 <?php
 namespace Database\Seeders;
 
+use App\Models\City;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
-class CitiesSeeder extends Seeder
+class CitySeeder extends Seeder
 {
     public function run()
     {
         $cities = ['Homs', 'Hama', 'Aleppo', 'Idlib', 'Daraa'];
 
-        foreach ($cities as $index => $city) {
-            DB::table('cities')->insert([
-                'id' => $index + 1,
+        foreach ($cities as $city) {
+            City::create([
                 'name' => $city,
             ]);
         }

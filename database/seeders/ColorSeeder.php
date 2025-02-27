@@ -1,18 +1,17 @@
 <?php
 namespace Database\Seeders;
 
+use App\Models\Color;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
-class ColorsSeeder extends Seeder
+class ColorSeeder extends Seeder
 {
     public function run()
     {
         $colors = ['Red', 'Blue', 'Black', 'White', 'Green', 'Yellow', 'Gray'];
 
-        foreach ($colors as $index => $color) {
-            DB::table('colors')->insert([
-                'id' => $index + 1,
+        foreach ($colors as  $color) {
+           Color::create([
                 'name' => $color,
                 'created_at' => now()
             ]);

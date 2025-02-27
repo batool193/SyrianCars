@@ -1,17 +1,15 @@
 <?php
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\DB;
 
-class UsersSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     public function run()
     {
-        DB::table('users')->insert([
-            [
-                'id' => 1,
+        $admin = User::create([
                 'first_name' => 'Admin',
                 'last_name' => 'User',
                 'email' => 'admin@example.com',
@@ -21,7 +19,9 @@ class UsersSeeder extends Seeder
                 'birthdate' => '1990-01-01',
                 'created_at' => now(),
                 'updated_at' => now(),
-            ],
         ]);
+
+        $admin->assignRole('admin');
+
     }
 }
