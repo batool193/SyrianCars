@@ -66,3 +66,9 @@ Route::apiResource('models', App\Http\Controllers\modelController::class);
  * These routes handle Gear management operations.
  */
 Route::apiResource('Gears', App\Http\Controllers\GearController::class);
+/**
+ * Rating Management Routes
+ *
+ * These routes handle Rating management operations.
+ */
+Route::apiResource('Ratings', App\Http\Controllers\RatingController::class);
