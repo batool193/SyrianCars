@@ -13,22 +13,32 @@ class User extends Authenticatable
     use HasFactory, HasApiTokens,HasRoles;
 
     protected $fillable = [
-         'first_name', 'last_name', 'email',
-        'password', 'phone', 'city_id', 'birthdate'
+        'first_name',
+        'last_name',
+        'email',
+        'password',
+        'phone',
+        'city_id',
+        'birthdate'
     ];
 
     protected $hidden = ['password'];
-
+    protected $casts = [
+        'password' => 'hashed',
+        'birthdate' => 'date',
+    ];
+    public function cars()
+    {
+        return $this->hasMany(Car::class);
+    }
     public function city()
     {
         return $this->belongsTo(City::class);
     }
-
-    public function ratings()
+    public function ratedCars()
     {
-        return $this->hasMany(Rating::class);
+        return $this->belongsToMany(Car::class, 'ratings')->withTimestamps();
     }
-
     public function socialAccounts()
     {
         return $this->hasMany(SocialAccount::class);
@@ -36,6 +46,6 @@ class User extends Authenticatable
 
     public function photos()
     {
-        return $this->morphMany(Photo::class, 'photoable');
+        return $this->morphOne(Photo::class, 'photoable');
     }
 }

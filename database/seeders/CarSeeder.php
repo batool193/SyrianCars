@@ -9,6 +9,7 @@ class CarSeeder extends Seeder
     public function run()
     {
         Car::create([
+            'user_id'=>1,
                 'brand_id' => 1,
                 'model_id' => 1,
                 'color_id' => 1,
@@ -27,6 +28,7 @@ class CarSeeder extends Seeder
                 'updated_at' => now(),
         ]);
         Car::create([
+            'user_id'=>1,
                 'brand_id' => 2,
                 'model_id' => 2,
                 'color_id' => 2,
@@ -46,6 +48,7 @@ class CarSeeder extends Seeder
         ]);
 
         Car::create([
+            'user_id'=>1,
                 'brand_id' => 3,
                 'model_id' => 3,
                 'color_id' => 3,
