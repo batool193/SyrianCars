@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fe5200a4f6aa5894c230abd80c3bf78",
+    "content-hash": "06a694f9c7366cf9f9b24d3beed691ed",
     "packages": [
         {
             "name": "brick/math",
@@ -134,6 +134,55 @@
                 }
             ],
             "time": "2023-12-11T17:09:12+00:00"
+        },
+        {
+            "name": "coding-partners/auto-controller",
+            "version": "1.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/YousefSaleh1/AutoController.git",
+                "reference": "4e17a13cedd08a254d52c8dc04056a628a5af794"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/YousefSaleh1/AutoController/zipball/4e17a13cedd08a254d52c8dc04056a628a5af794",
+                "reference": "4e17a13cedd08a254d52c8dc04056a628a5af794",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": "CodingPartners\\AutoController\\Providers\\AutoControllerServiceProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CodingPartners\\AutoController\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yousef Saleh",
+                    "email": "yousefsaleh.888.it@gmail.com"
+                },
+                {
+                    "name": "Ayham Ibrahim",
+                    "email": "ayhamfacebook1999@gmail.com"
+                }
+            ],
+            "description": "The \"Auto Controller\" package for Laravel allows you to quickly generate fully functional controllers for any model in your application. With a single command, the package will create a controller with all the standard CRUD (Create, Read, Update, Delete) methods, saving you significant time and effort. This enables you to focus on building the core features of your project.",
+            "support": {
+                "issues": "https://github.com/YousefSaleh1/AutoController/issues",
+                "source": "https://github.com/YousefSaleh1/AutoController/tree/1.5.5"
+            },
+            "time": "2024-09-07T05:38:39+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
