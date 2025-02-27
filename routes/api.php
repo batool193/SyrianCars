@@ -60,3 +60,9 @@ Route::apiResource('Fuels', App\Http\Controllers\FuelController::class);
  * These routes handle model management operations.
  */
 Route::apiResource('models', App\Http\Controllers\modelController::class);
+/**
+ * Gear Management Routes
+ *
+ * These routes handle Gear management operations.
+ */
+Route::apiResource('Gears', App\Http\Controllers\GearController::class);
