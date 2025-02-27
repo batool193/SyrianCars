@@ -30,3 +30,9 @@ Route::apiResource('Users', App\Http\Controllers\UserController::class);
  * These routes handle Car management operations.
  */
 Route::apiResource('Cars', App\Http\Controllers\CarController::class);
+/**
+ * City Management Routes
+ *
+ * These routes handle City management operations.
+ */
+Route::apiResource('Cities', App\Http\Controllers\CityController::class);
