@@ -48,3 +48,9 @@ Route::apiResource('Brands', App\Http\Controllers\BrandController::class);
  * These routes handle Color management operations.
  */
 Route::apiResource('Colors', App\Http\Controllers\ColorController::class);
+/**
+ * Fuel Management Routes
+ *
+ * These routes handle Fuel management operations.
+ */
+Route::apiResource('Fuels', App\Http\Controllers\FuelController::class);
